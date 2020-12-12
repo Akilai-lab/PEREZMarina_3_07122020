@@ -1,0 +1,478 @@
+$colorPrimary : #9356DC;
+$colorSecondary: #FF79DA;
+$colorTertiaire: #99E2D0;
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/**** HEADER**/
+    .logo {
+        width: max-content;
+        margin: 0 auto;
+                
+        img {
+            width: auto;
+        }
+    }
+
+    /** RESEARCH **/
+    #research {
+        background-color: #efefef;
+        width: 100%;
+    }
+    .blockMap {
+        background-color: #e0e0e0;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px auto;
+        font-weight: bold;
+        width: 50%;
+        height: 50%;
+    }
+    .imgMap {
+        display: flex;
+        width: 40px;
+        height: 30px;
+        margin: 0 20px;
+        
+        p {
+            color: #585757;
+            font-size: 20px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .reserveMeal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        h2 {
+            width: 50%;
+            text-align: center;
+            margin: 20px auto;
+        }
+        p {
+            width: 70%;
+            text-align: center;
+            margin: 20px auto;
+        }
+        button.btn {
+            margin: 15px auto;
+            border-style: none;
+            border-radius: 30px;
+            padding: 20px;
+            width: 20%;
+            height: 60%;
+            color: white;
+            font-size: 16px;
+            background-color: $colorPrimary;
+        }
+    }
+    /**FONCTIONNALITIES **/
+    #fonctionnalities {
+        width: 100%;
+        margin: 50px auto;
+    }
+    .fonctionnalitiesActions {
+        margin: 5px;   
+    }
+    .fonctionnality {
+        display: flex;
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        border-style: none;
+        box-shadow: 2px 2px 9px #8080808c;
+        margin: 27px auto;
+        align-items: center;
+        justify-content: flex-start;
+        width: 30%;
+        height: 80px;
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 20px;
+        }
+    }
+    .numberFloat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        float: left;
+        position: relative;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px 25px 25px;
+        background-color: $colorPrimary;
+        
+        p {
+            color: white;
+        }
+    }
+    .imgFonctionnality {
+        width: 5%;
+        margin: 0 35px;
+        
+        img {
+            width: auto;
+        }
+    }
+    /** RESTAURANTS **/
+    #restaurants {
+        width: 100%;
+        margin: 50px auto 0px auto;
+        background-color: #f5f5f5; 
+        padding-bottom: 50px;
+    }
+    .allRestaurants {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .restaurant {
+        height: 250px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 9px #8080808c;
+        border-style: none;
+        margin: 40px;
+        width: 30%;
+    }
+    .imgRestaurant {
+        width: 100%;
+        height: 65%;
+        display: flex;
+        
+        img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: inherit;
+            object-fit: cover;
+            order: 1;
+        }
+    }
+    .floatImage {
+        position: relative;
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 80px;
+        top: 9px;
+        width: 70px;
+        height: 25px;
+        background-color: $colorTertiaire;
+        border-radius: 3px;
+        
+        p {
+            color: #236f71;
+            padding: 7px;
+            font-weight: bold;
+        }
+    }
+    .moreInfo {
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        h2 {
+            font-weight: bold;
+            margin: 0;
+            padding-left: 3%;
+        }
+        p {
+            margin: 0;
+            padding-left: 3%;
+        }
+    }
+    .likeIt {
+        position: relative;
+        bottom: 70%;
+        right: 3%;
+        align-self: flex-end;
+        width: 7%;
+        height: 7%;
+        
+        img {
+            width: auto;
+        }
+    }
+    /** FOOTER **/
+    footer {
+        background-color: dimgray;
+        display: flex;
+        justify-content: center;
+        
+        p {
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .logoBdWhite {
+        width: 30%;
+        height: 15%;
+        padding: 15px;
+        filter: invert(1);
+        margin: auto 0;
+    }
+
+    .actions {
+        margin: 0;
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        img {
+            width: 5%;
+            margin: 0px 5%;
+            filter: invert(1);
+        }
+        p {
+            font-weight: bold;
+        }
+    }
+    .informationsActions {
+        margin: 0 5%;
+    }
+
+@media (max-width: 680px) {
+       /**** HEADER**/
+    .logo {
+        margin: 10px auto;
+        width: 40%;
+        height: 20%;
+        
+        img {
+            width: 100%;
+        }
+    }
+    /** RESEARCH **/
+    #research {
+        background-color: #efefef;
+        width: 100%;
+    }
+    .blockMap {
+        background-color: #e0e0e0;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px auto;
+        font-weight: bold;
+    }
+    .imgMap {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+        
+        p {
+            color: #585757;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .reserveMeal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        h2 {
+            width: 50%;
+            text-align: center;
+            margin: 20px auto;
+        }
+        p {
+            width: 70%;
+            text-align: center;
+            margin: 20px auto;
+        }
+        button.btn {
+            margin: 15px auto;
+            border-style: none;
+            border-radius: 30px;
+            padding: 20px;
+            width: 60%;
+            height: 60%;
+            color: white;
+            font-size: 16px;
+            background-color: #9356DC;
+        }
+    }
+    /**FONCTIONNALITIES **/
+    #fonctionnalities {
+        width: 100%;
+        margin: 50px auto;
+    }
+    .fonctionnalitiesActions {
+        margin: 5px;   
+    }
+    .fonctionnality {
+        display: flex;
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        border-style: none;
+        box-shadow: 2px 2px 9px #8080808c;
+        margin: 7px auto;
+        align-items: center;
+        justify-content: flex-start;
+        width: 75%;
+    }
+    .numberFloat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        float: left;
+        position: relative;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px 10px 10px;
+        background-color: blueviolet;
+        
+        p {
+            color: white;
+        }
+    }
+    .imgFonctionnality {
+        width: 5%;
+        margin: 0 15px;
+        
+        img {
+            width: auto;
+        }
+    }
+    /** RESTAURANTS **/
+    #restaurants {
+        width: 100%;
+        margin: 50px auto 0px auto;
+        background-color: #f5f5f5; 
+        padding-bottom: 50px;
+    }
+    .allRestaurants {
+        margin: auto;
+        width: 90%;
+    }
+    .restaurant {
+        height: 250px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 9px #8080808c;
+        border-style: none;
+        margin-bottom: 20px;
+    }
+    .imgRestaurant {
+        width: 100%;
+        height: 65%;
+        display: flex;
+        
+        img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: inherit;
+            object-fit: cover;
+            order: 1;
+        }
+    }
+    .floatImage {
+        position: relative;
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 80px;
+        top: 9px;
+        width: 70px;
+        height: 25px;
+        background-color: #99E2D0;
+        border-radius: 3px;
+        
+        p {
+            color: #236f71;
+            padding: 7px;
+            font-weight: bold;
+        }
+    }
+    .moreInfo {
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        h2 {
+            font-weight: bold;
+            margin: 0;
+            padding-left: 3%;
+        }
+        p {
+            margin: 0;
+            padding-left: 3%;
+        }
+    }
+    .likeIt {
+        position: relative;
+        bottom: 70%;
+        right: 3%;
+        align-self: flex-end;
+        width: 7%;
+        height: 7%;
+        
+        img {
+            width: auto;
+        }
+    }
+    /** FOOTER **/
+    footer {
+        background-color: dimgray;
+        
+        p {
+            color: white;
+            font-size: 16px;
+        }
+    }
+    .logoBdWhite {
+        width: 30%;
+        height: 15%;
+        padding: 15px;
+        filter: invert(1);
+    }
+
+    .actions {
+        margin: 0;
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        img {
+            width: 3.5%;
+            margin: 0px 5%;
+            filter: invert(1);
+        }
+        p {
+            font-weight: bold;
+        }
+    }
+    .informationsActions {
+        margin: 5%;
+    }
+
+}
