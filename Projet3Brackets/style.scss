@@ -197,20 +197,19 @@ h1 {
             @include paddingValue;
         }
         p {
-            margin: 0;
-            @include paddingValue;
+            margin: 0 3% 3% 3%;
         }
     }
     .likeIt {
         position: relative;
-        bottom: 70%;
+        bottom: 100%;
         right: 3%;
         align-self: flex-end;
         width: 7%;
         height: 7%;
         
         img {
-            width: auto;
+            width: 60%;
         }
     }
     /** FOOTER **/
