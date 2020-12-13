@@ -195,20 +195,19 @@ h1 {
   padding: 3%;
 }
 .moreInfo p {
-  margin: 0;
-  padding: 3%;
+  margin: 0 3% 3% 3%;
 }
 
 .likeIt {
   position: relative;
-  bottom: 70%;
+  bottom: 100%;
   right: 3%;
   align-self: flex-end;
   width: 7%;
   height: 7%;
 }
 .likeIt img {
-  width: auto;
+  width: 60%;
 }
 
 /** FOOTER **/
