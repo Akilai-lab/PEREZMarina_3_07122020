@@ -1,0 +1,142 @@
+/**** BODY ****/
+h2 {
+  margin: 30px 10px 5px 10px;
+  text-transform: uppercase;
+}
+
+.divider {
+  border-top: 2px solid #99E2D0;
+  height: 3px;
+  width: 10%;
+  margin: 0 10px;
+}
+
+h3 {
+  padding: 10px 5px 0 10px;
+}
+
+/**** HEADER**/
+.logo {
+  margin: 10px auto;
+  width: 40%;
+  height: 20%;
+}
+.logo img {
+  width: 100%;
+}
+
+/**** MENU ****/
+#menu {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ensembleMenus {
+  background-color: #f1f1f1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  bottom: 25px;
+}
+
+/** ENTREES **/
+.imgEnTete {
+  height: 250px;
+  width: 100%;
+}
+.imgEnTete img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.enTeteMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.enTeteMenu img {
+  width: 5%;
+}
+
+.detailEntree, .detailPlat, .detailDessert {
+  background-color: white;
+  box-shadow: 2px 2px 9px #8080808c;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.detailPrix {
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.detailPrix p {
+  padding-left: 5px;
+  margin-top: 0;
+}
+
+.prix {
+  align-self: flex-end;
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+/** BUTTON **/
+button {
+  align-self: center;
+  margin: 15px 25%;
+  border-style: none;
+  border-radius: 30px;
+  padding: 20px;
+  width: 50%;
+  height: 60%;
+  color: white;
+  font-size: 16px;
+  background-color: #9356DC;
+}
+
+/** FOOTER **/
+footer {
+  background-color: dimgray;
+}
+footer p {
+  color: white;
+  font-size: 16px;
+}
+
+.logoBdWhite {
+  width: 30%;
+  height: 15%;
+  padding: 15px;
+  filter: invert(1);
+}
+.logoBdWhite img {
+  width: 100%;
+}
+
+.actions {
+  margin: 0;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.action img {
+  width: 3.5%;
+  margin: 0px 5%;
+  filter: invert(1);
+}
+.action p {
+  font-weight: bold;
+}
+
+.informationsActions {
+  margin: 5%;
+}
+
+/*# sourceMappingURL=style.css.map */
