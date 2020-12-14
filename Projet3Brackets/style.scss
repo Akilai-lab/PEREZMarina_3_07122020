@@ -178,12 +178,11 @@ h1 {
         height: 25px;
         background-color: $colorTertiaire;
         border-radius: 3px;
-        
-        p {
-            color: #236f71;
-            padding: 7px;
-            font-weight: bold;
-        }
+            p {
+                color: #236f71;
+                padding: 7px;
+                font-weight: bold;
+            }
     }
     .moreInfo {
         height: 35%;
@@ -202,7 +201,7 @@ h1 {
     }
     .likeIt {
         position: relative;
-        bottom: 100%;
+        bottom: 80%;
         right: 3%;
         align-self: flex-end;
         width: 7%;
