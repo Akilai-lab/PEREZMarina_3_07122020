@@ -1,6 +1,7 @@
 $colorPrimary : #9356DC;
 $colorSecondary: #FF79DA;
 $colorTertiaire: #99E2D0;
+
 @mixin marginValue {
     margin: 0 5%;
 }
@@ -78,6 +79,13 @@ h1 {
             color: white;
             font-size: 16px;
             background-color: $colorPrimary;
+            transition: all 2s ease-out;
+            box-shadow: 3px 2px 10px #808080;
+            &:hover {
+                background-color: $colorSecondary;
+                box-shadow: 3px 2px 5px #808080;
+            }
+            
         }
     }
     /**FONCTIONNALITIES **/
@@ -209,6 +217,10 @@ h1 {
         
         img {
             width: 60%;
+            &:active {
+                background-color: $colorSecondary;
+                animation-delay: 3000ms;
+            }
         }
     }
     /** FOOTER **/
