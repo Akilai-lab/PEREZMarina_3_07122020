@@ -12,14 +12,13 @@ $colorTertiaire: #99E2D0;
         margin: 30px 10px 5px 10px;
         text-transform: uppercase;
         font-weight: normal;
-        text-align: center;
         margin-right: 20%;
     }
     .divider {
         border-top: 2px solid #99E2D0;
         height: 3px;
         width: 10%; 
-        margin: 0 30%;
+        margin: 10px;
     }
     h3 {
         padding: 10px 5px 0 10px;
@@ -27,9 +26,13 @@ $colorTertiaire: #99E2D0;
 
 /**** HEADER**/
     .logo {
-        width: max-content;
-        margin: 0 auto;
-                
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        .arrow {
+            width: 40px;
+            margin: 0 5%;
+        }     
         img {
             width: auto;
         }
@@ -159,8 +162,17 @@ $colorTertiaire: #99E2D0;
         @include marginValue;
     }
 @media (max-width: 1240px) {
+    .logo {
+        width: 70%;
+        margin-bottom: 20px;
+        .arrow {
+            width: 30px; 
+            margin: 0 17%;
+        }
+    }
     .enTeteMenu {
         flex-direction: row;
+        justify-content: space-between;
         width: 50%;
     }
     .imgEnTete {
@@ -246,10 +258,13 @@ $colorTertiaire: #99E2D0;
 /**** HEADER**/
     .logo {
         margin: 10px auto;
-        width: 40%;
+        width: 100%;
         height: 20%;
+        .arrow {
+            margin: 0;
+        }
         img {
-            width: 100%;
+            width: 50%;
         }
     }
 
