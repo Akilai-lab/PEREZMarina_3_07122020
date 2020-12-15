@@ -224,7 +224,7 @@ h1 {
   background-size: contain;
   transition: all 1s ease-out;
 }
-.moreInfo .likeIt .heart:focus {
+.moreInfo .likeIt .heart:hover {
   background-image: url("./assets/heart-solid.png");
 }
 
