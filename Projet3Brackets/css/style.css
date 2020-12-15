@@ -195,29 +195,37 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
 }
-.moreInfo h2 {
+.moreInfo a {
+  text-decoration: none;
+  color: black;
+  width: 85%;
+}
+.moreInfo a h2 {
   font-weight: bold;
   margin: 0;
   padding: 3%;
 }
-.moreInfo p {
+.moreInfo a p {
   margin: 0 3% 3% 3%;
 }
-
-.likeIt {
+.moreInfo .likeIt {
   position: relative;
-  bottom: 80%;
+  bottom: 60%;
   right: 3%;
   align-self: flex-end;
-  width: 7%;
-  height: 7%;
+  width: 20px;
+  height: 20px;
 }
-.likeIt img {
-  width: 60%;
+.moreInfo .likeIt .heart {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/heart-regular.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 1s ease-out;
 }
-.likeIt img:active {
-  background-color: #FF79DA;
-  animation-delay: 3000ms;
+.moreInfo .likeIt .heart:focus {
+  background-image: url("./assets/heart-solid.png");
 }
 
 /** FOOTER **/
