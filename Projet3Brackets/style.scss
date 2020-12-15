@@ -8,7 +8,9 @@ $colorTertiaire: #99E2D0;
 @mixin paddingValue {
     padding: 3%;
 }
-
+body {
+    
+}
 h1 {
     padding: 20px;
     text-align: center;
@@ -224,7 +226,7 @@ h1 {
             background-repeat: no-repeat;
             background-size: contain;
             transition: all 1s ease-out;
-            &:focus {
+            &:hover {
                 background-image: url("./assets/heart-solid.png");
             }
         }
