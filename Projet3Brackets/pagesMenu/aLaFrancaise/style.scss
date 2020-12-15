@@ -84,28 +84,45 @@ $colorTertiaire: #99E2D0;
     .details {
         width: 30%;
         margin: 0 auto;
+        transition: transform 330ms ease-in-out;
+        &:hover {
+            transform: translate(100px, 0);
+        }
     }
     .detailEntree, .detailPlat, .detailDessert {
         background-color: white;
         box-shadow: 2px 2px 9px #8080808c;
         border-radius: 10px;
         width: 90%;
+        display: flex;
+        margin-bottom: 10px;
+        .blockClic {
+            transition: transform 330ms ease-in-out;
+            &:hover {
+                margin: 0 0 0 auto;
+                background-color: $colorTertiaire;
+                width: 100px;
+                height: auto;
+            }
+        }
     }
-    .detailPrix {
+    .detail {
+        width: 100%;
+        .detailPrix {
         padding-left: 5px; 
         display: flex;
         justify-content: space-between;
-        p {
-            padding-left: 5px;
-            margin-top: 0;
+            p {
+                padding-left: 5px;
+                margin: 0 auto 0 0;
+            }
+            .prix {
+                padding-right: 5px;
+                font-weight: bold;
+                margin: 0 0 0 auto;
+            }
         }
     }
-    .prix {
-        align-self: flex-end;
-        padding-right: 5px;
-        font-weight: bold;
-    }
-
 /** BUTTON **/
     button {
         align-self: center;
