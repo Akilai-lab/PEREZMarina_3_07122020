@@ -71,23 +71,27 @@ h1 {
             text-align: center;
             margin: 20px auto;
         }
-        button.btn {
-            margin: 15px auto;
-            border-style: none;
-            border-radius: 30px;
-            padding: 20px;
-            width: 20%;
+        a {
+            width: 15%;
             height: 60%;
-            color: white;
-            font-size: 16px;
-            background-color: $colorPrimary;
-            transition: all 2s ease-out;
-            box-shadow: 3px 2px 10px #808080;
-            &:hover {
-                background-color: $colorSecondary;
-                box-shadow: 3px 2px 5px #808080;
+            padding: 20px;
+            margin: 15px auto;
+            button.btn {
+                border-style: none;
+                border-radius: 30px;
+                padding: 20px;
+                width: 90%;
+                height: 100%;
+                color: white;
+                font-size: 16px;
+                background-color: $colorPrimary;
+                transition: all 2s ease-out;
+                box-shadow: 3px 2px 10px #808080;
+                &:hover {
+                    background-color: $colorSecondary;
+                    box-shadow: 3px 2px 5px #808080;
+                }
             }
-            
         }
     }
     /**FONCTIONNALITIES **/
@@ -109,10 +113,15 @@ h1 {
         justify-content: flex-start;
         width: 30%;
         height: 80px;
+        cursor: pointer;
+        &:hover {
+            background-color: #ff79da38;
+        }
         p {
             font-size: 20px;
             font-weight: 600;
             margin: 0 20px;
+            opacity: 1;
         }
     }
     .numberFloat {
@@ -219,6 +228,7 @@ h1 {
         align-self: flex-end;
         width: 20px;
         height: 20px;
+        cursor: pointer;
         .heart {
             width: 100%;
             height: 100%;
@@ -234,7 +244,7 @@ h1 {
     }
     /** FOOTER **/
     footer {
-        background-color: dimgray;
+        background-color: #3e3e3e;
         display: flex;
         justify-content: center;
         
@@ -275,8 +285,12 @@ h1 {
     }
 @media (max-width: 1024px) {
     .reserveMeal {
-        button.btn {
+        a {
+            width: 50%;
+            button.btn {
             padding: 10px;
+                width: 100%
+            }
         }
     }
     .fonctionnality {
@@ -348,7 +362,7 @@ h1 {
     }
     /** RESTAURANTS **/
     .restaurant {
-        margin: 20px auto;
+        margin: 20px;
         width: auto;
     }
     /** FOOTER **/
