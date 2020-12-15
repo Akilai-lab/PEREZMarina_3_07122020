@@ -60,20 +60,25 @@ h1 {
   text-align: center;
   margin: 20px auto;
 }
-.reserveMeal button.btn {
+.reserveMeal a {
+  width: 15%;
+  height: 60%;
+  padding: 20px;
   margin: 15px auto;
+}
+.reserveMeal a button.btn {
   border-style: none;
   border-radius: 30px;
   padding: 20px;
-  width: 20%;
-  height: 60%;
+  width: 90%;
+  height: 100%;
   color: white;
   font-size: 16px;
   background-color: #9356DC;
   transition: all 2s ease-out;
   box-shadow: 3px 2px 10px #808080;
 }
-.reserveMeal button.btn:hover {
+.reserveMeal a button.btn:hover {
   background-color: #FF79DA;
   box-shadow: 3px 2px 5px #808080;
 }
@@ -99,11 +104,16 @@ h1 {
   justify-content: flex-start;
   width: 30%;
   height: 80px;
+  cursor: pointer;
+}
+.fonctionnality:hover {
+  background-color: #ff79da38;
 }
 .fonctionnality p {
   font-size: 20px;
   font-weight: 600;
   margin: 0 20px;
+  opacity: 1;
 }
 
 .numberFloat {
@@ -215,6 +225,7 @@ h1 {
   align-self: flex-end;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .moreInfo .likeIt .heart {
   width: 100%;
@@ -230,7 +241,7 @@ h1 {
 
 /** FOOTER **/
 footer {
-  background-color: dimgray;
+  background-color: #3e3e3e;
   display: flex;
   justify-content: center;
 }
@@ -271,8 +282,12 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-  .reserveMeal button.btn {
+  .reserveMeal a {
+    width: 50%;
+  }
+  .reserveMeal a button.btn {
     padding: 10px;
+    width: 100%;
   }
 
   .fonctionnality {
@@ -351,7 +366,7 @@ footer p {
 
   /** RESTAURANTS **/
   .restaurant {
-    margin: 20px auto;
+    margin: 20px;
     width: auto;
   }
 
