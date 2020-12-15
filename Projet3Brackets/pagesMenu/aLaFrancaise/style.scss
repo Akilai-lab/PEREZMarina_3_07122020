@@ -84,9 +84,8 @@ $colorTertiaire: #99E2D0;
     .details {
         width: 30%;
         margin: 0 auto;
-        transition: transform 330ms ease-in-out;
         &:hover {
-            transform: translate(100px, 0);
+            transform-origin: 50% bottom;
         }
     }
     .detailEntree, .detailPlat, .detailDessert {
@@ -96,9 +95,9 @@ $colorTertiaire: #99E2D0;
         width: 90%;
         display: flex;
         margin-bottom: 10px;
-        .blockClic {
-            transition: transform 330ms ease-in-out;
-            &:hover {
+        &:hover {
+            .blockClic {
+                transition: transform 330ms ease-in-out;
                 margin: 0 0 0 auto;
                 background-color: $colorTertiaire;
                 width: 100px;
