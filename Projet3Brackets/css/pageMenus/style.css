@@ -82,10 +82,9 @@ h3 {
 .details {
   width: 30%;
   margin: 0 auto;
-  transition: transform 330ms ease-in-out;
 }
 .details:hover {
-  transform: translate(100px, 0);
+  transform-origin: 50% bottom;
 }
 
 .detailEntree, .detailPlat, .detailDessert {
@@ -96,10 +95,8 @@ h3 {
   display: flex;
   margin-bottom: 10px;
 }
-.detailEntree .blockClic, .detailPlat .blockClic, .detailDessert .blockClic {
+.detailEntree:hover .blockClic, .detailPlat:hover .blockClic, .detailDessert:hover .blockClic {
   transition: transform 330ms ease-in-out;
-}
-.detailEntree .blockClic:hover, .detailPlat .blockClic:hover, .detailDessert .blockClic:hover {
   margin: 0 0 0 auto;
   background-color: #99E2D0;
   width: 100px;
