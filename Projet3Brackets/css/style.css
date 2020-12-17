@@ -45,7 +45,7 @@
 }
 /** fin spinner loader**/
 p {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -308,6 +308,7 @@ h1 {
   font-weight: bold;
   margin: 0;
   padding: 3%;
+  font-family: "Shrikhand", cursive;
 }
 .moreInfo a p {
   margin: 0 3% 3% 3%;
