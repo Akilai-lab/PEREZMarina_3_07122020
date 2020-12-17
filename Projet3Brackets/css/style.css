@@ -89,8 +89,20 @@ h1 {
   10% {
     opacity: 20%;
   }
-  100% {
+  30% {
     opacity: 20%;
+  }
+  50% {
+    opacity: 20%;
+  }
+  70% {
+    opacity: 30%;
+  }
+  90% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 95%;
   }
 }
 /****fin container**/
