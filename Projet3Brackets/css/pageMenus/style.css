@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-  padding: 10px 5px 0 10px;
+  padding: 0 5px 0 10px;
   font-family: "Shrikhand", cursive;
 }
 
@@ -90,7 +90,22 @@ p {
   margin: 0 auto;
 }
 
-.detailEntree, .detailPlat, .detailDessert {
+/** **/
+.details__detailEntree, .details__detailPlat, .details__detailDessert {
+  animation: blocsMenus 4s;
+  transition-duration: 4s;
+}
+
+@keyframes blocsMenus {
+  10% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/** **/
+.details__detailEntree, .details__detailPlat, .details__detailDessert {
   background-color: white;
   box-shadow: 2px 2px 9px #8080808c;
   border-radius: 10px;
@@ -100,7 +115,7 @@ p {
   transition: all 4s ease-out;
   transform: translateX(4);
 }
-.detailEntree:hover .blockClic, .detailPlat:hover .blockClic, .detailDessert:hover .blockClic {
+.details__detailEntree:hover .blockClic, .details__detailPlat:hover .blockClic, .details__detailDessert:hover .blockClic {
   transition: transform 330ms ease-in-out;
   margin: 0 0 0 auto;
   background-color: #99E2D0;
@@ -109,7 +124,7 @@ p {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
-.detailEntree:hover .blockClic .imgCheck, .detailPlat:hover .blockClic .imgCheck, .detailDessert:hover .blockClic .imgCheck {
+.details__detailEntree:hover .blockClic .imgCheck, .details__detailPlat:hover .blockClic .imgCheck, .details__detailDessert:hover .blockClic .imgCheck {
   background-image: url(../../assets/icones/check-circle-regular.svg);
   background-repeat: no-repeat;
   height: 40%;
@@ -119,6 +134,7 @@ p {
 }
 
 .detail {
+  margin: 5px 0;
   width: 100%;
 }
 .detail .detailPrix {
@@ -134,7 +150,7 @@ p {
   transform: translateZ(2);
 }
 .detail .detailPrix .prix {
-  padding-right: 5px;
+  padding-right: 15px;
   font-weight: bold;
   margin: 0 0 0 auto;
 }
