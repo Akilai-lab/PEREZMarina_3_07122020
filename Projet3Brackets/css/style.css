@@ -457,6 +457,9 @@ footer p {
   .fonctionnality {
     width: 90%;
   }
+  .fonctionnality p {
+    margin: 0 20px;
+  }
 
   .numberFloat {
     right: 15px;
@@ -467,6 +470,7 @@ footer p {
 
   .imgFonctionnality {
     margin: 0 15px;
+    width: 7%;
   }
 
   /** RESTAURANTS **/
