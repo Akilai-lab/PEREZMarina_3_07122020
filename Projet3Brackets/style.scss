@@ -59,7 +59,7 @@ $anim-dur: 4s;
 }
 /** fin spinner loader**/
 p {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h1 {
     padding: 20px;
@@ -311,6 +311,7 @@ h1 {
                 font-weight: bold;
                 margin: 0;
                 @include paddingValue;
+                font-family: 'Shrikhand', cursive;
             }
             p {
                 margin: 0 3% 3% 3%;
