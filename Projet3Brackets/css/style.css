@@ -155,7 +155,7 @@ h1 {
   margin: 20px auto;
 }
 .reserveMeal a {
-  width: 15%;
+  width: 20%;
   height: 60%;
   padding: 20px;
   margin: 15px auto;
@@ -302,7 +302,7 @@ h1 {
 .moreInfo a {
   text-decoration: none;
   color: black;
-  width: 85%;
+  width: 65%;
 }
 .moreInfo a h2 {
   font-weight: bold;
@@ -318,8 +318,8 @@ h1 {
   bottom: 60%;
   right: 3%;
   align-self: flex-end;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 .moreInfo .likeIt .heart {
