@@ -2,7 +2,7 @@ $colorPrimary : #9356DC;
 $colorSecondary: #FF79DA;
 $colorTertiaire: #99E2D0;
 @mixin marginValue {
-    margin: 0 5%;
+    margin: auto 5%;
 }
 @mixin paddingValue {
     padding: 3%;
@@ -220,6 +220,8 @@ $anim-dur: 4s;
     }
     .informationsActions {
         @include marginValue;
+        display: flex;
+        flex-direction: column;
     }
 @media (max-width: 1240px) {
     .logo {
