@@ -259,6 +259,7 @@ footer p {
   }
   .details h2 {
     text-align: left;
+    font-size: 1em;
   }
   .details__detailEntree, .details__detailPlat, .details__detailDessert {
     width: 100%;
@@ -365,12 +366,13 @@ footer p {
     margin-left: 10px;
   }
   .enTeteMenu h1 {
-    margin: 0;
+    margin: 10px 0 0 0;
     font-size: 1.4em;
   }
   .enTeteMenu img {
     width: 8%;
-    margin-right: 20px;
+    margin-right: 30px;
+    margin-top: 10px;
   }
 
   .details {
@@ -423,10 +425,18 @@ footer p {
   .action img {
     width: 3.5%;
   }
+  .action p {
+    font-weight: normal;
+    margin: 10px 0;
+  }
 
   .informationsActions {
     margin: 5%;
     padding-bottom: 15px;
+  }
+  .informationsActions p {
+    font-weight: normal;
+    margin: 10px 0;
   }
 }
 
