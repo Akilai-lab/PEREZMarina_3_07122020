@@ -246,24 +246,27 @@ h1 {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 .fonctionnalitiesActions .imgFonctionnality__Two {
   background-image: url("./../assets/icones/list-solid.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 .fonctionnalitiesActions .imgFonctionnality__Three {
   background-image: url("./../assets/icones/store-solid.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 
 /** RESTAURANTS **/
@@ -471,9 +474,9 @@ footer p {
     text-transform: none;
     text-align: left;
     margin-top: 0;
-    padding-top: 0;
     font-size: 1.2em;
     padding-top: 15%;
+    margin-bottom: 0;
   }
 
   /**** HEADER**/
@@ -505,6 +508,15 @@ footer p {
 
   .reserveMeal {
     margin: 0 5%;
+  }
+  .reserveMeal h2 {
+    width: 95%;
+    font-weight: 700;
+    font-size: 23px;
+    margin: 10% 0;
+  }
+  .reserveMeal p {
+    margin: 0;
   }
   .reserveMeal button.btn {
     width: 60%;
@@ -548,13 +560,20 @@ footer p {
   .restaurant .moreInfo a .textuel {
     width: 100%;
   }
+  .restaurant .moreInfo a .textuel h2 {
+    font-size: 1em;
+  }
+  .restaurant .moreInfo a .textuel p {
+    margin: 0 3% 5% 3%;
+    font-size: 0.9em;
+  }
   .restaurant .moreInfo .likeIt {
     position: inherit;
   }
   .restaurant .moreInfo .likeIt .heart {
     position: relative;
     bottom: 65%;
-    right: 30%;
+    right: 65%;
   }
 
   .imgRestaurant {
@@ -576,12 +595,19 @@ footer p {
   }
 
   .action img {
-    width: 3.5%;
+    width: 4.5%;
+  }
+  .action p {
+    font-weight: normal;
+    margin: 10px 0;
   }
 
   .informationsActions {
-    margin: 5%;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+  }
+  .informationsActions p {
+    font-weight: normal;
+    margin: 10px 0;
   }
 }
 
