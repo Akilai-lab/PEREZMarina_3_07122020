@@ -252,24 +252,27 @@ h1 {
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            width: 15px;
-            height: 15px;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
         }
         .imgFonctionnality__Two {
             background-image: url("./../assets/icones/list-solid.svg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            width: 15px;
-            height: 15px;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
         }
         .imgFonctionnality__Three {
             background-image: url("./../assets/icones/store-solid.svg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            width: 15px;
-            height: 15px;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
         }
     }
     /** RESTAURANTS **/
@@ -474,9 +477,9 @@ h1 {
         text-transform: none;
         text-align: left;
         margin-top: 0;
-        padding-top: 0;
         font-size: 1.2em;
         padding-top: 15%;
+        margin-bottom: 0;
     }
        /**** HEADER**/
     .logo {
@@ -506,6 +509,15 @@ h1 {
     }
     .reserveMeal {
         margin: 0 5%;
+        h2 {
+            width: 95%;
+            font-weight: 700;
+            font-size: 23px;
+            margin: 10% 0;
+        }
+        p {
+            margin: 0;
+        }
         button.btn {
             width: 60%;
         }
@@ -548,6 +560,13 @@ h1 {
                 width: 100%;
                 .textuel {
                     width: 100%;
+                    h2 {
+                        font-size: 1em;
+                    }
+                    p {
+                        margin: 0 3% 5% 3%;
+                        font-size: 0.9em; 
+                    }
                 }
             }
                 .likeIt {
@@ -555,7 +574,7 @@ h1 {
                     .heart {
                         position: relative;
                         bottom: 65%;
-                        right: 30%;
+                        right: 65%;
                     }
                 }
         }
@@ -579,12 +598,19 @@ h1 {
     }
     .action {
         img {
-            width: 3.5%;
+            width: 4.5%;
+        }
+        p {
+            font-weight: normal;
+            margin: 10px 0;
         }
     }
     .informationsActions {
-        margin: 5%;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+        p {
+            font-weight: normal;
+            margin: 10px 0;
+        }
     }
 
 }
