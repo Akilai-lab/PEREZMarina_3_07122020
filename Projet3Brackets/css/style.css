@@ -596,6 +596,9 @@ footer p {
     display: inherit;
   }
 
+  .logoBdWhite {
+    padding: 20px 0;
+  }
   .logoBdWhite img {
     width: 100%;
   }
