@@ -25,7 +25,7 @@ p {
 
 /**** HEADER**/
 .logo {
-  width: 70%;
+  width: 73%;
   display: flex;
   justify-content: space-around;
 }
@@ -55,9 +55,9 @@ p {
 
 /** ENTREES **/
 .imgEnTete {
-  height: 30%;
-  width: 30%;
-  margin: 10px auto;
+  width: 15%;
+  margin: 30px auto;
+  transform: scaleX(1.5);
 }
 .imgEnTete img {
   width: 100%;
