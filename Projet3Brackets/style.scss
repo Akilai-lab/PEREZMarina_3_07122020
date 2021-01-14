@@ -169,7 +169,7 @@ h1 {
             border-style: none;
             border-radius: 30px;
             padding: 20px;
-            width: 90%;
+            width: 25%;
             height: 100%;
             color: white;
             font-size: 14px;
@@ -195,6 +195,7 @@ h1 {
         margin: 50px auto;
         h2 {
             font-family: 'Roboto';
+            text-align: center;
         }
     }
     .fonctionnalitiesActions {
@@ -288,6 +289,8 @@ h1 {
         h2 {
             font-family: 'Roboto';
             margin-left: 15px;
+            text-align: center;
+            padding-top: 10px;
         }
     }
     .allRestaurants {
