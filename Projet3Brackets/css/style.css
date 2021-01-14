@@ -384,9 +384,9 @@ footer p {
 .logoBdWhite {
   width: 30%;
   height: 15%;
-  padding: 15px;
+  padding: 20px;
   filter: invert(1);
-  margin: auto 0;
+  margin: 0 15px;
 }
 
 .actions {
