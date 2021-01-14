@@ -64,7 +64,7 @@ h1 {
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Shrikhand', sans-serif;
+    font-family: 'Shrikhand', cursive;
     font-weight: 900;
 }
 /**** HEADER**/
@@ -158,7 +158,7 @@ h1 {
             width: 50%;
             text-align: center;
             margin: 20px auto;
-            font-family: 'Shrikhand', sans-serif;
+            font-family: 'Shrikhand';
             font-weight: 900;
         }
         p {
@@ -494,6 +494,10 @@ h1 {
     /** RESEARCH **/
     .blockMap {
         width: 100%;
+        background-color: #eceaea;
+        p {
+            color: #636363;
+        }
     }
     .imgMap {
         width: 20px;
@@ -538,6 +542,9 @@ h1 {
         width: 20px;
         height: 20px;
         border-radius: 15px 15px 15px;
+    }
+    .floatImage p {
+        color: #2b9194;
     }
 //    .imgFonctionnality__One, .imgFonctionnality__Two, .imgFonctionnality__Three {
 //        margin: 2px;
@@ -593,7 +600,7 @@ h1 {
     }
     .logoBdWhite {
         img {
-            width: 95%;
+            width: 100%;
         }
     }
     .action {
@@ -611,6 +618,9 @@ h1 {
             font-weight: normal;
             margin: 10px 0;
         }
+    }
+    .textuel h2 {
+        font-weight: 800;
     }
 
 }
