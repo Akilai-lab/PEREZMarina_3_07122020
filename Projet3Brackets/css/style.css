@@ -600,20 +600,24 @@ footer p {
     width: 100%;
   }
 
-  .action img {
+  .actions {
+    margin: 0 15px;
+  }
+  .actions .action img {
     width: 4.5%;
   }
-  .action p {
+  .actions .action p {
     font-weight: normal;
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   .informationsActions {
     padding-bottom: 10px;
+    margin: 0 15px;
   }
   .informationsActions p {
     font-weight: normal;
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   .textuel h2 {
