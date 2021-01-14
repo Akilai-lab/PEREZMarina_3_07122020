@@ -77,11 +77,16 @@ p {
   font-family: "Shrikhand";
   font-size: 2em;
 }
-.enTeteMenu img {
+.enTeteMenu .heart {
   width: 6%;
   margin-right: 8px;
+  background-image: url("../../css/assets/heart-regular.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 1s ease-out;
 }
-.enTeteMenu img:hover {
+.enTeteMenu .heart:hover {
   background-image: url("../../assets/icones/heart-solid.png");
 }
 
@@ -384,8 +389,9 @@ footer p {
     font-size: 1.2em;
     font-weight: bold;
   }
-  .detailsMenu .enTeteMenu img {
-    width: 8%;
+  .detailsMenu .enTeteMenu .heart {
+    width: 20px;
+    height: 20px;
     margin-right: 30px;
     margin-top: 10px;
   }
