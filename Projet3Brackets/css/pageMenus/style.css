@@ -76,7 +76,6 @@ p {
 .enTeteMenu h1 {
   font-family: "Shrikhand";
   font-size: 2em;
-  font-style: italic;
 }
 .enTeteMenu img {
   width: 6%;
@@ -378,7 +377,7 @@ footer p {
   }
   .detailsMenu .enTeteMenu h1 {
     margin: 10px 0 0 0;
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-weight: bold;
   }
   .detailsMenu .enTeteMenu img {
