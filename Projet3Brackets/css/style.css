@@ -52,7 +52,7 @@ h1 {
   padding: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand", cursive;
   font-weight: 900;
 }
 
@@ -148,7 +148,7 @@ h1 {
   width: 50%;
   text-align: center;
   margin: 20px auto;
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand";
   font-weight: 900;
 }
 .reserveMeal p {
@@ -492,6 +492,10 @@ footer p {
   /** RESEARCH **/
   .blockMap {
     width: 100%;
+    background-color: #eceaea;
+  }
+  .blockMap p {
+    color: #636363;
   }
 
   .imgMap {
@@ -540,6 +544,10 @@ footer p {
     width: 20px;
     height: 20px;
     border-radius: 15px 15px 15px;
+  }
+
+  .floatImage p {
+    color: #2b9194;
   }
 
   /** RESTAURANTS **/
@@ -591,7 +599,7 @@ footer p {
   }
 
   .logoBdWhite img {
-    width: 95%;
+    width: 100%;
   }
 
   .action img {
@@ -608,6 +616,10 @@ footer p {
   .informationsActions p {
     font-weight: normal;
     margin: 10px 0;
+  }
+
+  .textuel h2 {
+    font-weight: 800;
   }
 }
 
