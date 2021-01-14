@@ -341,7 +341,7 @@ footer p {
 
   /**** HEADER**/
   .logo {
-    margin: 10px auto;
+    margin: 10px 0 10px 15px;
     width: 100%;
     height: 20%;
   }
@@ -350,6 +350,7 @@ footer p {
   }
   .logo img {
     max-width: 47%;
+    margin: auto;
   }
 
   /**** MENU ****/
