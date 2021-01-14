@@ -172,7 +172,8 @@ h1 {
             height: 100%;
             color: white;
             font-size: 14px;
-            background-color: $colorPrimary;
+//            background-color: $colorPrimary;
+            background: linear-gradient($colorSecondary, $colorPrimary);
             transition: all 2s ease-out;
             box-shadow: 3px 2px 10px #808080;
             height: 60%;
