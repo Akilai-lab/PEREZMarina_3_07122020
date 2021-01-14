@@ -159,7 +159,8 @@ h1 {
             font-weight: 900;
         }
         p {
-            font-size: 1em;
+            color: #636363;
+            font-size: 1.1em;
             width: 70%;
             text-align: center;
             margin: 20px auto;
@@ -350,7 +351,7 @@ h1 {
                 font-weight: bold;
                 margin: 0;
                 @include paddingValue;
-                font-family: 'Shrikhand', sans-serif;
+                font-family: 'Roboto';
             }
             p {
                 margin: 0 3% 3% 3%;
@@ -478,7 +479,7 @@ h1 {
         text-transform: none;
         text-align: left;
         margin-top: 0;
-        font-size: 1.2em;
+        font-size: 1.5em;
         padding-top: 10%;
         margin-bottom: 0;
     }
@@ -536,7 +537,7 @@ h1 {
         height: 68px;
         p {
             font-size: 15px;
-            font-weight: 400;
+            font-weight: 900;
         }
     }
     .numberFloat {
@@ -544,6 +545,9 @@ h1 {
         width: 25px;
         height: 25px;
         border-radius: 15px 15px 15px;
+        p {
+            font-weight: 200;
+        }
     }
     .floatImage p {
         color: #2b9194;
