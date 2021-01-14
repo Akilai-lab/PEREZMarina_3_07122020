@@ -418,6 +418,7 @@ $anim-dur: 4s;
     .action {
         img {
             width: 3.5%;
+            margin: 0 5% 0 0;
         }
         p {
             font-weight: normal;
@@ -425,7 +426,7 @@ $anim-dur: 4s;
         }
     }
     .informationsActions {
-        margin: 5%;
+        margin: 0 15px;
         padding-bottom: 15px;
         p {
             font-weight: normal;
