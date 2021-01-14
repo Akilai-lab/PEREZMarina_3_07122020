@@ -4,7 +4,7 @@ h2 {
   text-transform: uppercase;
   font-weight: normal;
   margin-right: 20%;
-  font-family: "shrikhand", sans-serif;
+  font-family: "Shrikhand";
 }
 
 .divider {
@@ -16,11 +16,11 @@ h2 {
 
 h3 {
   padding: 0 5px 0 10px;
-  font-family: "shrikhand", sans-serif;
+  font-family: "Shrikhand";
 }
 
 p {
-  font-family: "roboto", sans-serif;
+  font-family: "roboto";
 }
 
 /**** HEADER**/
@@ -74,7 +74,7 @@ p {
   width: 25%;
 }
 .enTeteMenu h1 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand";
   font-size: 2em;
   font-style: italic;
 }
@@ -341,10 +341,10 @@ footer p {
     height: 20%;
   }
   .logo .arrow {
-    margin: 0;
+    margin: auto;
   }
   .logo img {
-    max-width: 55%;
+    max-width: 47%;
   }
 
   /**** MENU ****/
@@ -368,6 +368,7 @@ footer p {
   .enTeteMenu h1 {
     margin: 10px 0 0 0;
     font-size: 1.4em;
+    font-weight: bold;
   }
   .enTeteMenu img {
     width: 8%;
@@ -405,8 +406,9 @@ footer p {
 
   /** BUTTON **/
   button {
-    width: 50%;
-    margin: 15% 25% 10% 25%;
+    width: 55%;
+    margin: 10% 20%;
+    padding: 10px 20px;
   }
 
   /** FOOTER **/
@@ -427,7 +429,7 @@ footer p {
   }
   .action p {
     font-weight: normal;
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   .informationsActions {
@@ -436,7 +438,7 @@ footer p {
   }
   .informationsActions p {
     font-weight: normal;
-    margin: 10px 0;
+    margin: 5px 0;
   }
 }
 
