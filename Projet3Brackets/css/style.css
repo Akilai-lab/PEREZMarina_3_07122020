@@ -45,14 +45,13 @@
 }
 /** fin spinner loader**/
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
 }
 
 h1 {
   padding: 20px;
   text-align: center;
-  text-transform: uppercase;
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto";
   font-weight: 900;
 }
 
@@ -144,45 +143,47 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.reserveMeal h2 {
+.reserveMeal h1 {
   width: 50%;
   text-align: center;
-  margin: 20px auto;
-  font-family: "Shrikhand";
   font-weight: 900;
 }
 .reserveMeal p {
+  font-size: 1em;
   width: 70%;
   text-align: center;
   margin: 20px auto;
 }
-.reserveMeal a {
-  width: 20%;
-  height: 60%;
-  padding: 20px;
-  margin: 15px auto;
-}
-.reserveMeal a button.btn {
+.reserveMeal button {
   border-style: none;
   border-radius: 30px;
   padding: 20px;
   width: 90%;
   height: 100%;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   background-color: #9356DC;
   transition: all 2s ease-out;
   box-shadow: 3px 2px 10px #808080;
+  height: 60%;
+  margin: 0 auto 45px auto;
 }
-.reserveMeal a button.btn:hover {
+.reserveMeal button:hover {
   background-color: #FF79DA;
   box-shadow: 3px 2px 5px #808080;
+}
+.reserveMeal button a {
+  color: white;
+  text-decoration: none;
 }
 
 /**FONCTIONNALITIES **/
 #contain__fonctionnalities {
   width: 100%;
   margin: 50px auto;
+}
+#contain__fonctionnalities h2 {
+  font-family: "Roboto";
 }
 
 .fonctionnalitiesActions {
@@ -277,6 +278,10 @@ h1 {
   background-color: #f5f5f5;
   padding-bottom: 50px;
 }
+#contain__restaurants h2 {
+  font-family: "Roboto";
+  margin-left: 15px;
+}
 
 .allRestaurants {
   margin: auto;
@@ -322,6 +327,7 @@ h1 {
   border-radius: 3px;
 }
 .floatImage p {
+  font-size: 0.8em;
   color: #236f71;
   padding: 10px;
   font-weight: bold;
@@ -338,7 +344,7 @@ h1 {
   color: black;
   width: 65%;
 }
-.moreInfo a h2 {
+.moreInfo a h3 {
   font-size: 1.2em;
   font-weight: bold;
   margin: 0;
@@ -419,12 +425,10 @@ footer p {
     left: 15%;
   }
 
-  .reserveMeal a {
-    width: 50%;
-  }
-  .reserveMeal a button.btn {
+  .reserveMeal button {
     padding: 10px;
-    width: 100%;
+    width: 100% a;
+    width-width: 50%;
   }
 
   .fonctionnality {
@@ -450,31 +454,31 @@ footer p {
     left: 7%;
   }
 
-  .reserveMeal h2 {
+  .reserveMeal h1 {
     width: auto;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .reserveMeal p {
     width: 100%;
-    font-size: 0.9em;
+    font-size: 1em;
   }
-  .reserveMeal a {
+  .reserveMeal button {
+    width: 100%;
+    padding: 16px 20px;
+  }
+  .reserveMeal button a {
     width: auto;
     padding: 10px 0;
     margin: 15px 0;
   }
-  .reserveMeal a button.btn {
-    width: 100%;
-    padding: 16px 20px;
-  }
 
-  h1 {
+  h2, h3 {
     text-transform: none;
     text-align: left;
     margin-top: 0;
     font-size: 1.2em;
-    padding-top: 15%;
+    padding-top: 10%;
     margin-bottom: 0;
   }
 
@@ -512,17 +516,17 @@ footer p {
   .reserveMeal {
     margin: 0 5%;
   }
-  .reserveMeal h2 {
+  .reserveMeal h1 {
     width: 95%;
-    font-weight: 700;
-    font-size: 23px;
-    margin: 10% 0;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: 0;
   }
   .reserveMeal p {
-    margin: 0;
+    margin: 25px;
   }
-  .reserveMeal button.btn {
-    width: 60%;
+  .reserveMeal button {
+    width: 70%;
   }
 
   /**FONCTIONNALITIES **/
@@ -531,10 +535,12 @@ footer p {
   }
 
   .fonctionnality {
-    width: 95%;
+    width: 97%;
+    height: 68px;
   }
   .fonctionnality p {
     font-size: 15px;
+    font-weight: 400;
   }
 
   .numberFloat {
@@ -567,8 +573,8 @@ footer p {
   .restaurant .moreInfo a .textuel {
     width: 100%;
   }
-  .restaurant .moreInfo a .textuel h2 {
-    font-size: 1em;
+  .restaurant .moreInfo a .textuel h3 {
+    font-size: 1.1em;
   }
   .restaurant .moreInfo a .textuel p {
     margin: 0 3% 5% 3%;
@@ -598,18 +604,19 @@ footer p {
   }
 
   .logoBdWhite {
+    padding: 15px;
     margin: 0;
-    padding: 20px 0;
   }
   .logoBdWhite img {
     width: 100%;
   }
 
   .actions {
-    margin: 0 15px;
+    margin: 0 20px;
   }
   .actions .action img {
     width: 4.5%;
+    margin: 0 5% 0 0;
   }
   .actions .action p {
     font-weight: normal;
@@ -618,7 +625,7 @@ footer p {
 
   .informationsActions {
     padding-bottom: 10px;
-    margin: 0 15px;
+    margin: 0 20px;
   }
   .informationsActions p {
     font-weight: normal;
