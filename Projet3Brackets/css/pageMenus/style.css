@@ -315,7 +315,7 @@ footer p {
 @media (min-width: 300px) and (max-width: 680px) {
   /**** BODY ****/
   h2 {
-    margin: 30px 10px 5px 10px;
+    margin: 30px 10px 5px 0;
     text-transform: uppercase;
     font-weight: normal;
     font-family: "Roboto";
@@ -326,7 +326,7 @@ footer p {
     border-top: 2px solid #99E2D0;
     height: 3px;
     width: 10%;
-    margin: 0 10px 15px 10px;
+    margin: 0 10px 15px 0;
   }
 
   h3 {
@@ -376,7 +376,7 @@ footer p {
     margin-left: 10px;
   }
   .detailsMenu .enTeteMenu h1 {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 10px;
     font-size: 1.7em;
     font-weight: bold;
   }
