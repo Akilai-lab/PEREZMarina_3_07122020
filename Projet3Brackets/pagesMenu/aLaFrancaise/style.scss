@@ -83,8 +83,12 @@ p {
     img {
         width: 6%;
         margin-right: 8px;
+        &:hover {
+            background-image: url("../../assets/icones/heart-solid.png");
+        }
     }
 }
+
 .detailsMenu {
     display: flex;
 }
@@ -325,7 +329,7 @@ footer {
         font-family: 'Roboto';
         padding: 7px;
         margin: 0;
-        font-size: 15px;
+        font-size: 12px;
     }
 
 /**** HEADER**/
@@ -365,7 +369,7 @@ footer {
         margin-left: 10px;
         h1 {
             margin: 10px 0 0 10px;
-            font-size: 1.7em;
+            font-size: 1.2em;
             font-weight: bold;
         }
         img {
@@ -395,7 +399,7 @@ footer {
         padding-left: 5px; 
         display: flex;
         p {
-            font-size: 15px;
+            font-size: 10px;
             padding-left: 5px;
             margin-bottom: 5px;
         }
