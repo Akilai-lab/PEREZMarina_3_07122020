@@ -1,6 +1,7 @@
 $colorPrimary : #9356DC;
 $colorSecondary: #FF79DA;
 $colorTertiaire: #99E2D0;
+
 @mixin marginValue {
     margin: auto 5%;
 }
@@ -180,7 +181,7 @@ button {
     width: 20%;
     color: white;
     font-size: 16px;
-    background-color: #9356DC;
+    background: linear-gradient( $colorSecondary, $colorPrimary);
     margin: 2% 40% 2% 40%;
     transition: all 2s ease-out;
     &:hover {
