@@ -319,6 +319,8 @@ footer p {
     margin: 30px 10px 5px 10px;
     text-transform: uppercase;
     font-weight: normal;
+    font-family: "Roboto";
+    font-size: 1.2em;
   }
 
   .divider {
@@ -329,9 +331,10 @@ footer p {
   }
 
   h3 {
+    font-family: "Roboto";
     padding: 7px;
     margin: 0;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   /**** HEADER**/
@@ -348,20 +351,26 @@ footer p {
   }
 
   /**** MENU ****/
-  /** ENTREES **/
-  .detailsMenu {
-    display: block;
+  .ensembleMenus {
+    bottom: 35px;
   }
-  .detailsMenu .imgEnTete {
+
+  /** ENTREES **/
+  .imgEnTete {
     height: 250px;
     width: 100%;
   }
-  .detailsMenu .imgEnTete img {
+  .imgEnTete img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+  .detailsMenu {
+    display: block;
+  }
   .detailsMenu .enTeteMenu {
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -398,7 +407,7 @@ footer p {
     display: flex;
   }
   .detailsMenu .detailPrix p {
-    font-size: 9px;
+    font-size: 15px;
     padding-left: 5px;
     margin-bottom: 5px;
   }
