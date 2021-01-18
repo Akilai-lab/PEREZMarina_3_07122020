@@ -261,6 +261,10 @@ footer p {
     display: block;
   }
 
+  .heart {
+    height: 50px;
+  }
+
   .details {
     width: 50%;
   }
