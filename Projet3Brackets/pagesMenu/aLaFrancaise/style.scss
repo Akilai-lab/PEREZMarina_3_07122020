@@ -14,7 +14,7 @@ h2 {
     text-transform: uppercase;
     font-weight: normal;
     margin-right: 20%;
-    font-family: 'Shrikhand';
+    font-family: 'Roboto';
 }
 .divider {
     border-top: 2px solid #99E2D0;
@@ -238,6 +238,11 @@ footer {
     flex-direction: column;
 }
 @media (min-width: 680px) and (max-width: 1024px) {
+        h2 {
+            font-weight: normal;
+            font-family: 'Roboto';
+            font-size: 1.2em;
+        }
     .logo {
         width: 70%;
         margin-bottom: 20px;
@@ -318,7 +323,7 @@ footer {
     }
 }
 
-@media (min-width: 300px) and (max-width: 680px) {
+@media (max-width: 680px) {
     /**** BODY ****/
     body {
         margin: 0;
