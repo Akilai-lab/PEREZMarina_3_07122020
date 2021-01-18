@@ -453,10 +453,19 @@ h1 {
     }
 }
 @media (min-width: 300px) and (max-width: 680px) {
+    body {
+        margin: 0;
+    }
+    header {
+        margin-top: 20px;
+    }
     .load {
         width: 90%;
         height: 100%;
         left: 7%;
+    }
+    .logo {
+        margin: 0 10px;
     }
     .reserveMeal {
         h1 {
@@ -536,7 +545,7 @@ h1 {
     margin: inherit;
     }
     .fonctionnality {
-        width: 97%;
+        width: 93%;
         height: 68px;
         p {
             font-size: 15px;
