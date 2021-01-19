@@ -110,7 +110,7 @@ $anim-dur: 4s;
     &__detailEntree, &__detailPlat, &__detailDessert {
         animation: blocsMenus 4s;
         transition-duration: $anim-dur;
-    }
+    }//animation d'une durée de 4s avec les keyframes blocsMenus pour leur affichage, à 10% blocs cachés, à 100% blocs affichés
 }
 
 @keyframes blocsMenus {
@@ -131,15 +131,20 @@ $anim-dur: 4s;
         display: flex;
         margin-bottom: 10px;
         transition: all 4s ease-out;
-        transform: translateX(4);
+        //affichage des blocs avec une durée de 4s, un effet rapide puis décéléré. 
         &:hover {
+            //effet au clic sur les plats, entrées, desserts
             .blockClic {
                 transition: transform 330ms ease-in-out;
+                //proriété transform, durée de transition 330ms 
+                //blockClick a avant le hover une width de 0 puis une width de 20%
+                //ease-in-out signifie que la transformation est lente au debut puis à la fin
                 background-color: $colorTertiaire;
                 width: 20%;
                 border-bottom-right-radius: 10px;
                 border-top-right-radius: 10px;
                 .imgCheck {
+                    //l'img check est l'icone de confirmation du choix du menu qui a une hauteur de 40% en fonction de son bloc parent
                     background-image: url(../../assets/icones/check-circle-regular.svg);
                     background-repeat: no-repeat;
                     height: 40%;
@@ -156,6 +161,7 @@ $anim-dur: 4s;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            //suite à l'hover sur les blocs, les titres et paragraphes s'ils sont coupés ne retournent pas à la ligne mais apparaissent avec ...
         }
     }
     
