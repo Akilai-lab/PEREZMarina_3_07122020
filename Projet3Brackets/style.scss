@@ -20,6 +20,7 @@ $anim-dur: 4s;
     position: absolute;
     top: 35%;
     left: 35%;
+    //bloc loading spinner, flex positionnement côte à côte position absolute pour placement central à la page 
     &__bar {
         background-image: url(./../css/assets/heart-solid.svg);
         background-size: 100%;
@@ -30,32 +31,36 @@ $anim-dur: 4s;
         animation: bars 4s cubic-bezier(0, 0.52, 0.99, 0.43);
         transition-duration: $anim-dur;
     }
+    //img de loading spinner de taille 100% , margin 15px left et right pour espacement egal, une animation de 4 s 
+    //bars: keyframes transformation selon % actuel d'animation
+    //cubic-bezier: vitesse d'activité de la transformation
     visibility: hidden;
+    //visibility hidden pour  cacher loading spinner
 }
 
 @keyframes bars {
     0% {
-        transform: scaleY(0.8);
+        transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
     }
     20% {
-        transform: scaleX(0.0);
+        transform: scaleX(0.0);//reduction total de l'echelle de la largeur
     }
     40% {
-        transform: scaleY(0.8);
+        transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
     }
     60% {
-        transform: scaleX(0.0);
+        transform: scaleX(0.0);//reduction total de l'echelle de la largeur
     }
     80% {
-        transform: scaleY(0.8);
+        transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
     }
     90% {
-        transform: scaleX(0.0);
+        transform: scaleX(0.0);//reduction total de l'echelle de la largeur
     }
     100% {
-        transform: scaleX(0.8);
+        transform: scaleX(0.8);//reduction de l'echelle de la largeur
     }
-}
+}//effet de rotation du loading via ses transformations
 /** fin spinner loader**/
 p {
     font-family: 'Roboto';
@@ -77,7 +82,7 @@ h1 {
     }
 /****fin header **/
 /****CONTAINER**/
-#contain {
+#contain {//les sectiond de la page durant le loading ont une opacité réduite, avec l'animation de keyframes opacitySection et d'une durée de 5s 
     &__research {
         width: 100%;
         height: 100%;
@@ -173,13 +178,12 @@ h1 {
             height: 100%;
             color: white;
             font-size: 14px;
-//            background-color: $colorPrimary;
             background: linear-gradient($colorSecondary, $colorPrimary);
-            transition: all 2s ease-out;
+            transition: all 2s ease-out;//transition entre chaque transformation de 2s, rapide sur le début et décèlere sur la fin
             box-shadow: 3px 2px 10px #808080;
             height: 60%;
             margin: 0 auto 45px auto;
-            &:hover {
+            &:hover {//effet au clic du boutton, chgt de bd couleur et ombre portée plus sombre
                 background-color: $colorSecondary;
                 box-shadow: 3px 2px 5px #808080;
             }
@@ -374,8 +378,8 @@ h1 {
             background-image: url("./assets/heart-regular.png");
             background-repeat: no-repeat;
             background-size: contain;
-            transition: all 1s ease-out;
-            &:hover {
+            transition: all 1s ease-out;//transition d'1s
+            &:hover {//à l'hover, clic chgt background img
                 background-image: url("./assets/heart-solid.png");
             }
         }
