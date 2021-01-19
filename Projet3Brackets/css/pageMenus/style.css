@@ -122,7 +122,6 @@ p {
   display: flex;
   margin-bottom: 10px;
   transition: all 4s ease-out;
-  transform: translateX(4);
 }
 .details__detailEntree:hover .blockClic, .details__detailPlat:hover .blockClic, .details__detailDessert:hover .blockClic {
   transition: transform 330ms ease-in-out;
