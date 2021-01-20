@@ -89,7 +89,19 @@ p {
         background-size: contain;
         transition: all 1s ease-out;
         &:hover {
-            background-image: url("../../assets/icones/heart-solid.png");
+            animation: progressivColor 4s ease-in-out;
+            background-image: url("../../css/assets/heart-regular.png");
+            opacity: 0%;
+        }
+        @keyframes progressivColor {
+            10% {
+                background-image: url("../../assets/icones/heart-solid.png");
+                opacity: 0%;
+            }
+            100% {
+                background-image: url("../../assets/icones/heart-solid.png");
+                opacity: 100%;
+            }
         }
     }
 }
@@ -151,6 +163,16 @@ $anim-dur: 4s;
                     filter: invert(1);
                     background-position: center;
                     margin: 30%;
+                    animation: rotateIcon 1s ease-in-out;
+                }
+                @keyframes rotateIcon {
+                    10% {
+                        transform: rotate(0.0turn);
+                    }
+                    100% {
+                        transform: rotate(1turn);
+                    }
+                    
                 }
             }
             .detail {
