@@ -8,6 +8,9 @@ $colorTertiaire: #99E2D0;
 @mixin paddingValue {
     padding: 3%;
 }
+body {
+    margin: 0;
+}
 /** spinner loader**/
 
 $cd-bars: #15DEA5;
@@ -61,18 +64,17 @@ $anim-dur: 4s;
             transform:  scaleX(0.8);
         }
     }
-    @keyframes blocHidden {
+}
+@keyframes blocHidden {
         0% {
-            width: 650px;
-            height: 280px;
+            width: 100%;
+            height: 50%;
         }
         100% {
             width: inherit;
             height: inherit;
         }
     }
-}
-
 //effet de rotation du loading via ses transformations
 /** fin spinner loader**/
 p {
@@ -110,7 +112,6 @@ h1 {
     }
     &__restaurants {
         width: 100%;
-        height: 100%;
         animation: opacitySection 6000ms;
         transition-duration: 5s;
     }
@@ -192,17 +193,31 @@ h1 {
             color: white;
             font-size: 14px;
             background: linear-gradient($colorSecondary, $colorPrimary);
-            transition: all 2s ease-out;//transition entre chaque transformation de 2s, rapide sur le début et décèlere sur la fin
             box-shadow: 3px 2px 10px #808080;
             height: 60%;
             margin: 0 auto 45px auto;
             &:hover {//effet au clic du boutton, chgt de bd couleur et ombre portée plus sombre
-                background: $colorSecondary;
-                box-shadow: 3px 2px 5px #808080;
+                animation: changeColor 4s cubic-bezier(.49,.32,.79,.65);
+//                background: $colorSecondary;
+                box-shadow: 5px 5px 7px #808080;
             }
             a {
                 color: white;
                 text-decoration: none;
+            }
+            @keyframes changeColor {
+                10% {
+                    background: linear-gradient($colorSecondary, $colorPrimary);
+                }
+                50% {
+                    background: #DB68BB;
+                }
+                75% {
+                    background: #DB68BB;
+                }
+                100% {
+                    background: $colorSecondary;
+                }
             }
         }
     }
@@ -267,7 +282,7 @@ h1 {
         }
     }
     .fonctionnalitiesActions {
-        width: 100%;
+        width: auto;
         .imgFonctionnality__One {
             background-image: url("./../assets/icones/mobile-alt-solid.svg");
             background-position: center;
@@ -455,7 +470,7 @@ h1 {
     }
 @media (min-width: 680px) and (max-width: 1024px) {
     .load {
-        width: 70%;
+        width: auto;
         left: 15%;
     }
     .reserveMeal {
@@ -488,10 +503,17 @@ h1 {
     header {
         margin-top: 20px;
     }
-    .load {
-        width: 90%;
-        height: 100%;
+    .container {
+        width: auto;
         left: 7%;
+        .load {
+            margin: inherit;
+            left: inherit;
+            top: inherit;
+        }
+    }
+    .fonctionnalitiesActions {
+        width: auto;
     }
     .logo {
         margin: 0 10px;
@@ -573,12 +595,15 @@ h1 {
     #contain__fonctionnalities {
     margin: inherit;
     }
-    .fonctionnality {
-        width: 93%;
-        height: 68px;
-        p {
-            font-size: 15px;
-            font-weight: 900;
+    .fonctionnalitiesActions {
+        width: auto;
+        .fonctionnality {
+            width: 93%;
+            height: 68px;
+            p {
+                font-size: 15px;
+                font-weight: 900;
+            }
         }
     }
     .numberFloat {
