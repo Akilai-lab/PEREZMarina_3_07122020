@@ -393,7 +393,19 @@ h1 {
             background-size: contain;
             transition: all 1s ease-out;//transition d'1s
             &:hover {//à l'hover, clic chgt background img
-                background-image: url("./assets/heart-solid.png");
+                animation: progressivColor 4s ease-in-out;
+                background-image: url("./assets/heart-regular.png");
+                opacity: 0%;
+            }
+            @keyframes progressivColor {
+                10% {
+                    background-image: url("./assets/heart-solid.png");
+                    opacity: 0%;
+                }
+                100% {
+                    background-image: url("./assets/heart-solid.png");
+                    opacity: 100%;
+                }
             }
         }
     }
