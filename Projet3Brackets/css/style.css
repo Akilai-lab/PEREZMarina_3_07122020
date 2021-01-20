@@ -20,7 +20,7 @@
   transition-duration: 4s;
 }
 
-@keyframes bars {
+@-moz-keyframes bars {
   0% {
     transform: scaleY(0.8);
   }
@@ -85,7 +85,7 @@ h1 {
   transition-duration: 5s;
 }
 
-@keyframes opacitySection {
+@-moz-keyframes opacitySection {
   10% {
     opacity: 20%;
   }
