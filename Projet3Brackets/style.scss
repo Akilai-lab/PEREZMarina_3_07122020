@@ -13,13 +13,14 @@ $colorTertiaire: #99E2D0;
 $cd-bars: #15DEA5;
 $anim-dur: 4s;
 .load {
-    width: 650px;
-    height: 180px;
+    width: inherit;
+    height: inherit;
     display: flex;
     margin: auto;
     position: absolute;
     top: 35%;
     left: 35%;
+    animation: blocHidden 4s cubic-bezier(0, 0.52, 0.99, 0.43);
     //bloc loading spinner, flex positionnement côte à côte position absolute pour placement central à la page 
     &__bar {
         background-image: url(./../css/assets/heart-solid.svg);
@@ -30,37 +31,49 @@ $anim-dur: 4s;
         margin: 0 15px;
         animation: bars 4s cubic-bezier(0, 0.52, 0.99, 0.43);
         transition-duration: $anim-dur;
+        animation-duration: 4s;
     }
     //img de loading spinner de taille 100% , margin 15px left et right pour espacement egal, une animation de 4 s 
     //bars: keyframes transformation selon % actuel d'animation
     //cubic-bezier: vitesse d'activité de la transformation
-    visibility: hidden;
     //visibility hidden pour  cacher loading spinner
+
+    @keyframes bars {
+        0% {
+            transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
+        }
+        20% {
+            transform: scaleX(0.0);//reduction total de l'echelle de la largeur
+        }
+        40% {
+            transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
+        }
+        60% {
+            transform: scaleX(0.0);//reduction total de l'echelle de la largeur
+        }
+        80% {
+            transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
+        }
+        90% {
+            transform: scaleX(0.0);//reduction total de l'echelle de la largeur
+        }
+        100% {
+            transform:  scaleX(0.8);
+        }
+    }
+    @keyframes blocHidden {
+        0% {
+            width: 650px;
+            height: 280px;
+        }
+        100% {
+            width: inherit;
+            height: inherit;
+        }
+    }
 }
 
-@-moz-keyframes bars {
-    0% {
-        transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
-    }
-    20% {
-        transform: scaleX(0.0);//reduction total de l'echelle de la largeur
-    }
-    40% {
-        transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
-    }
-    60% {
-        transform: scaleX(0.0);//reduction total de l'echelle de la largeur
-    }
-    80% {
-        transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
-    }
-    90% {
-        transform: scaleX(0.0);//reduction total de l'echelle de la largeur
-    }
-    100% {
-        transform: scaleX(0.8);//reduction de l'echelle de la largeur
-    }
-}//effet de rotation du loading via ses transformations
+//effet de rotation du loading via ses transformations
 /** fin spinner loader**/
 p {
     font-family: 'Roboto';
@@ -102,7 +115,7 @@ h1 {
         transition-duration: 5s;
     }
 }
-@-moz-keyframes opacitySection {
+@keyframes opacitySection {
     10% {
         opacity: 20%;
     }
@@ -184,7 +197,7 @@ h1 {
             height: 60%;
             margin: 0 auto 45px auto;
             &:hover {//effet au clic du boutton, chgt de bd couleur et ombre portée plus sombre
-                background-color: $colorSecondary;
+                background: $colorSecondary;
                 box-shadow: 3px 2px 5px #808080;
             }
             a {
