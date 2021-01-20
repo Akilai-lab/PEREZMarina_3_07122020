@@ -38,7 +38,7 @@ $anim-dur: 4s;
     //visibility hidden pour  cacher loading spinner
 }
 
-@keyframes bars {
+@-moz-keyframes bars {
     0% {
         transform: scaleY(0.8);//reduction de l'echelle de la hauteur du coeur
     }
@@ -82,7 +82,7 @@ h1 {
     }
 /****fin header **/
 /****CONTAINER**/
-#contain {//les sectiond de la page durant le loading ont une opacité réduite, avec l'animation de keyframes opacitySection et d'une durée de 5s 
+#contain {//les section de la page durant le loading ont une opacité réduite, avec l'animation de keyframes opacitySection et d'une durée de 5s 
     &__research {
         width: 100%;
         height: 100%;
@@ -102,7 +102,7 @@ h1 {
         transition-duration: 5s;
     }
 }
-@keyframes opacitySection {
+@-moz-keyframes opacitySection {
     10% {
         opacity: 20%;
     }
