@@ -471,6 +471,14 @@ footer p {
   display: flex;
   flex-direction: column;
 }
+.informationsActions a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 16px;
+  font-family: "Roboto";
+}
 
 @media (min-width: 680px) and (max-width: 1024px) {
   .load {
@@ -498,6 +506,15 @@ footer p {
 
   .restaurant {
     width: 40%;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 16px;
+    font-family: "Roboto";
   }
 }
 @media (max-width: 680px) {
@@ -708,7 +725,7 @@ footer p {
   .informationsActions a {
     color: white;
     text-decoration: none;
-    font-weight: normal;
+    font-weight: 500;
     margin: 5px 0;
     font-size: 19px;
   }
