@@ -165,7 +165,8 @@ h1 {
   text-align: center;
   margin: 20px auto;
 }
-.reserveMeal button {
+.reserveMeal .button {
+  text-decoration: none;
   border-style: none;
   border-radius: 30px;
   padding: 20px;
@@ -178,7 +179,7 @@ h1 {
   height: 60%;
   margin: 0 auto 45px auto;
 }
-.reserveMeal button:hover {
+.reserveMeal .button:hover {
   animation: changeColor 4s cubic-bezier(0.49, 0.32, 0.79, 0.65);
   box-shadow: 3px 5px 7px #313030;
   background: #FF79DA;
@@ -197,7 +198,7 @@ h1 {
     background: linear-gradient(#ff7ae9, #ef74db);
   }
 }
-.reserveMeal button a {
+.reserveMeal .button a {
   color: white;
   text-decoration: none;
 }
@@ -476,7 +477,9 @@ footer p {
     width: auto;
   }
 
-  .reserveMeal button {
+  .reserveMeal .button {
+    text-align: center;
+    text-decoration: none;
     padding: 10px;
     width: 30%;
   }
@@ -499,7 +502,7 @@ footer p {
 }
 @media (max-width: 680px) {
   body {
-    margin: revert;
+    margin: none;
   }
 
   header {
@@ -532,14 +535,11 @@ footer p {
     width: 100%;
     font-size: 1em;
   }
-  .reserveMeal button {
-    width: 100%;
+  .reserveMeal .button {
     padding: 16px 20px;
-  }
-  .reserveMeal button a {
-    width: auto;
-    padding: 10px 0;
-    margin: 15px 0;
+    width: 45%;
+    text-align: center;
+    text-decoration: none;
   }
 
   h2, h3 {
@@ -593,8 +593,8 @@ footer p {
   .reserveMeal p {
     margin: 25px;
   }
-  .reserveMeal button {
-    width: 70%;
+  .reserveMeal .button {
+    font-family: "Roboto";
   }
 
   /**FONCTIONNALITIES **/
