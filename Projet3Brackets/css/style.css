@@ -523,7 +523,7 @@ footer p {
     left: 7%;
   }
   .container .load {
-    margin: inherit;
+    left: 0;
     top: inherit;
   }
 
