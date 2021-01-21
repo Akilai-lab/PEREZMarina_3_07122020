@@ -265,7 +265,8 @@ button {
 footer {
     background-color: #3e3e3e;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     p {
         color: white;
         font-size: 16px;
@@ -281,6 +282,7 @@ footer {
 }
 .actions {
     margin: 0;
+    width: 20%;
 }
 .action {
     display: flex;
@@ -323,7 +325,6 @@ footer {
         }
     }
     .enTeteMenu {
-        flex-direction: row;
         justify-content: space-between;
         width: 50%;
     }
@@ -356,7 +357,8 @@ footer {
     }
     footer {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
     }
     footer p {
         color: white;
@@ -375,13 +377,16 @@ footer {
     }
     .actions {
         margin: 0;
+        display: flex;
+        width: 40%;
     }
     .action {
+        width: 55%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         img {
-            width: 5%;
+            width: 10%;
             margin: 0 5%;
             filter: invert(1);
         }
@@ -532,15 +537,18 @@ footer {
             width: 100%;
         }
     }
-    .action {
-        margin: 0 20px;
-        img {
-            width: 3.5%;
-            margin: 0 5% 0 0;
-        }
-        p {
-            font-weight: normal;
-            margin: 5px 0;
+    .actions {
+        width: auto;
+        .action {
+            margin: 0 20px;
+            img {
+                width: 3.5%;
+                margin: 0 5% 0 0;
+            }
+            p {
+                font-weight: normal;
+                margin: 5px 0;
+            }
         }
     }
     .informationsActions {
