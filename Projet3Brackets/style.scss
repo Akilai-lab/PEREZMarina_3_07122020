@@ -183,7 +183,8 @@ h1 {
             text-align: center;
             margin: 20px auto;
         }
-        button {
+        .button {
+            text-decoration: none;
             border-style: none;
             border-radius: 30px;
             padding: 20px;
@@ -486,7 +487,9 @@ h1 {
 //        left: 15%;
     }
     .reserveMeal {
-        button {
+        .button {
+            text-align: center;
+            text-decoration: none;
             padding: 10px;
             width: 30%;
 //            a {
@@ -510,7 +513,7 @@ h1 {
 }
 @media (max-width: 680px) {
     body {
-        margin: revert;
+        margin: none;
     }
     header {
         margin-top: 20px;
@@ -539,14 +542,11 @@ h1 {
             width: 100%;
             font-size: 1em;
         } 
-        button {
-            width: 100%;
+        .button {
             padding: 16px 20px;
-            a {
-                width: auto;
-                padding: 10px 0;
-                margin: 15px 0;
-            }
+            width: 45%;
+            text-align: center;
+            text-decoration: none;
         }
     }
     h2, h3 {
@@ -597,8 +597,8 @@ h1 {
         p {
             margin: 25px;
         }
-        button {
-            width: 70%;
+        .button {
+            font-family: 'Roboto';
         }
     }
     /**FONCTIONNALITIES **/
