@@ -534,6 +534,13 @@ footer p {
     font-weight: normal;
     margin: 5px 0;
   }
+  .informationsActions a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 5px 0;
+    font-size: 19px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
