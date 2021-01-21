@@ -480,6 +480,14 @@ h1 {
         @include marginValue;
         display: flex;
         flex-direction: column;
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 0;
+            font-size: 16px;
+            font-family: "Roboto";
+        }
     }
 @media (min-width: 680px) and (max-width: 1024px) {
     .load {
@@ -509,6 +517,16 @@ h1 {
     }
     .restaurant {
         width: 40%;
+    }
+    footer {
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 0;
+            font-size: 16px;
+            font-family: "Roboto";
+        }
     }
 }
 @media (max-width: 680px) {
@@ -704,7 +722,7 @@ h1 {
         a {
             color: white;
             text-decoration: none;
-            font-weight: normal;
+            font-weight: 500;
             margin: 5px 0;
             font-size: 19px;
         }
