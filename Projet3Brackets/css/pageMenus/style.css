@@ -285,9 +285,10 @@ footer p {
   flex-direction: column;
 }
 .informationsActions a {
+  font-family: "Roboto";
   color: white;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: bold;
   margin: 5px 0;
   font-size: 19px;
 }
@@ -390,11 +391,12 @@ footer p {
     margin: 0 5%;
   }
   .informationsActions a {
+    font-family: "Roboto";
     color: white;
     text-decoration: none;
-    font-weight: normal;
+    font-weight: bold;
     margin: 5px 0;
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 @media (max-width: 680px) {
@@ -554,11 +556,12 @@ footer p {
     margin: 5px 0;
   }
   .informationsActions a {
+    font-family: "Roboto";
     color: white;
     text-decoration: none;
     font-weight: normal;
     margin: 5px 0;
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 
