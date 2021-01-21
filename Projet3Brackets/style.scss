@@ -8,9 +8,6 @@ $colorTertiaire: #99E2D0;
 @mixin paddingValue {
     padding: 3%;
 }
-body {
-    margin: 0;
-}
 /** spinner loader**/
 
 $cd-bars: #15DEA5;
@@ -530,9 +527,6 @@ h1 {
     }
 }
 @media (max-width: 680px) {
-    body {
-        margin: none;
-    }
     header {
         margin-top: 20px;
     }
