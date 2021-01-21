@@ -601,7 +601,7 @@ footer p {
   .reserveMeal h1 {
     width: 95%;
     font-weight: bold;
-    margin: 0 auto;
+    margin: 0;
     padding-bottom: 0;
   }
   .reserveMeal p {
