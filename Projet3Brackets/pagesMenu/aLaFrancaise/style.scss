@@ -89,19 +89,31 @@ p {
         background-size: contain;
         transition: all 1s ease-out;
         &:hover {
-            animation: progressivColor 4s ease-in-out;
-            background-image: url("../../css/assets/heart-regular.png");
-            opacity: 0%;
-        }
-        @keyframes progressivColor {
-            10% {
-                background-image: url("../../assets/icones/heart-solid.png");
-                opacity: 0%;
+            animation: progressivColor 5s ease-in-out;
+            @keyframes progressivColor {
+                0% {
+                    background-image: url("../../css/assets/heart-regular.png");
+                    opacity: 100%;
+                }
+                25% {
+                    background-image: url("../../css/assets/heart-regular.png");
+                    opacity: 25%;
+                }
+                50% {
+                    background-image: url("../../assets/icones/heart-solid.png");
+                    opacity: 25%;
+                    filter: contrast(0.2);
+                }
+                75% {
+                    background-image: url("../../assets/icones/heart-solid.png");
+                    opacity: 75%;
+                }
+                100% {
+                    background-image: url("../../assets/icones/heart-solid.png");
+                    opacity: 100%;
+                }
             }
-            100% {
-                background-image: url("../../assets/icones/heart-solid.png");
-                opacity: 100%;
-            }
+            background-image: url("../../assets/icones/heart-solid.png");
         }
     }
 }
@@ -155,14 +167,16 @@ $anim-dur: 4s;
                 width: 20%;
                 border-bottom-right-radius: 10px;
                 border-top-right-radius: 10px;
+                display: flex;
                 .imgCheck {
                     //l'img check est l'icone de confirmation du choix du menu qui a une hauteur de 40% en fonction de son bloc parent
+                    width: 40%;
                     background-image: url(../../assets/icones/check-circle-regular.svg);
                     background-repeat: no-repeat;
                     height: 40%;
                     filter: invert(1);
                     background-position: center;
-                    margin: 30%;
+                    margin: auto;
                     animation: rotateIcon 1s ease-in-out;
                 }
                 @keyframes rotateIcon {
@@ -218,12 +232,27 @@ button {
     width: 20%;
     color: white;
     font-size: 16px;
-    background: linear-gradient( $colorSecondary, $colorPrimary);
+    background: linear-gradient($colorSecondary, $colorPrimary);
     margin: 2% 40% 2% 40%;
-    transition: all 2s ease-out;
+    box-shadow: 3px 3px 5px #646262;
     &:hover {
-        background-color: $colorSecondary;
-        box-shadow: 3px 2px 5px #808080;
+        animation: changeColor 4s cubic-bezier(.49,.32,.79,.65);
+        box-shadow: 3px 5px 7px #313030;
+        @keyframes changeColor {
+            0% {
+                background: linear-gradient(#FF79DA, #9356DC);
+            }
+            25% {
+                background: linear-gradient(#ff7afd, #b661db);
+            }
+            50% {
+                background: linear-gradient(#ff7af2, #db6ddb);
+            }
+            100% {
+                background: linear-gradient(#ff7ae9, #ef74db);
+            }
+        }
+        background: $colorSecondary;
     }
 }
  /** FOOTER **/
@@ -354,7 +383,7 @@ footer {
 @media (max-width: 680px) {
     /**** BODY ****/
     body {
-        margin: 0;
+        margin: revert;
     }
     #menu {
         margin: 0;
@@ -381,15 +410,17 @@ footer {
 
 /**** HEADER**/
     .logo {
-        margin: 10px 0 10px 15px;
         width: 100%;
         height: 20%;
-        .arrow {
-            margin: auto;
+        a {
+            margin-top: 10px;
+            .arrow {
+                margin: auto;
+            }
         }
         img {
             max-width: 47%;
-            margin: auto;
+            margin-top: 10px;
         }
     }
 
@@ -399,8 +430,9 @@ footer {
 }
 /** ENTREES **/
 .imgEnTete {
+    transform: revert;
     height: 250px;
-    width: 100%;
+    width: auto;
     img {
         width: 100%;
         height: 100%;
@@ -413,8 +445,8 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
-        margin-left: 10px;
+        width: auto;
+//        margin-left: 10px;
         h1 {
             margin: 10px 0 0 10px;
             font-size: 1.2em;
