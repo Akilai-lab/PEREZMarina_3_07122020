@@ -434,7 +434,8 @@ h1 {
 footer {
   background-color: #3e3e3e;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 footer p {
   color: white;
@@ -452,6 +453,7 @@ footer p {
 
 .actions {
   margin: 0;
+  width: 20%;
 }
 
 .action {
@@ -474,12 +476,12 @@ footer p {
   flex-direction: column;
 }
 .informationsActions a {
+  font-family: "Roboto";
   color: white;
   text-decoration: none;
   font-weight: bold;
   margin: 5px 0;
   font-size: 16px;
-  font-family: "Roboto";
 }
 
 @media (min-width: 680px) and (max-width: 1024px) {
@@ -510,13 +512,50 @@ footer p {
     width: 40%;
   }
 
-  footer a {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .logoBdWhite {
+    width: 20%;
+    height: 15%;
+    padding: 15px;
+    filter: invert(1);
+    margin: auto 0;
+  }
+  footer .logoBdWhite img {
+    width: 100%;
+  }
+  footer .actions {
+    margin: 0;
+    display: flex;
+    width: 40%;
+  }
+  footer .action {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  footer .action img {
+    width: 10%;
+    margin: 0 5%;
+    filter: invert(1);
+  }
+  footer .action p {
+    font-weight: bold;
+  }
+  footer .informationsActions {
+    margin: 0 5%;
+  }
+  footer .informationsActions a {
+    font-family: "Roboto";
     color: white;
     text-decoration: none;
     font-weight: bold;
     margin: 5px 0;
     font-size: 16px;
-    font-family: "Roboto";
   }
 }
 @media (max-width: 680px) {
@@ -688,21 +727,29 @@ footer p {
 
   /** FOOTER **/
   footer {
-    display: inherit;
+    display: block;
+  }
+  footer p {
+    color: white;
+    font-size: 16px;
   }
 
   .logoBdWhite {
     padding: 15px;
+    margin: 0;
   }
   .logoBdWhite img {
     width: 100%;
   }
 
   .actions {
+    width: auto;
+  }
+  .actions .action {
     margin: 0 20px;
   }
   .actions .action img {
-    width: 4.5%;
+    width: 3.5%;
     margin: 0 5% 0 0;
   }
   .actions .action p {
@@ -711,18 +758,18 @@ footer p {
   }
 
   .informationsActions {
-    display: block;
-    padding-bottom: 10px;
     margin: 0 20px;
+    padding-bottom: 15px;
   }
   .informationsActions p {
     font-weight: normal;
     margin: 5px 0;
   }
   .informationsActions a {
+    font-family: "Roboto";
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: normal;
     margin: 5px 0;
     font-size: 16px;
   }
