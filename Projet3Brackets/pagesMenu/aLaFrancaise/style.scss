@@ -226,6 +226,7 @@ $anim-dur: 4s;
 }
 /** BUTTON **/
 button {
+    font-family: 'Roboto';
     border-style: none;
     border-radius: 30px;
     padding: 20px;
@@ -298,6 +299,13 @@ footer {
     @include marginValue;
     display: flex;
     flex-direction: column;
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: normal;
+        margin: 5px 0;
+        font-size: 19px;
+    }
 }
 @media (min-width: 680px) and (max-width: 1024px) {
         h2 {
@@ -382,6 +390,13 @@ footer {
     }
     .informationsActions {
         margin: 0 5%;
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: normal;
+            margin: 5px 0;
+            font-size: 19px;
+        }
     }
 }
 
@@ -493,6 +508,7 @@ footer {
     }
 /** BUTTON **/
     button {
+        font-family: 'Roboto';
         width: 55%;
         margin: 10% 20%;
         padding: 10px 20px;
