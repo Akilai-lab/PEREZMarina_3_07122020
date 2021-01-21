@@ -292,7 +292,7 @@ footer p {
   text-decoration: none;
   font-weight: bold;
   margin: 5px 0;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 @media (min-width: 680px) and (max-width: 1024px) {
