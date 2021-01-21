@@ -665,7 +665,7 @@ footer p {
 
   .imgRestaurant {
     display: flex;
-    align-items: center;
+    height: 165px;
   }
   .imgRestaurant img {
     width: 100%;
