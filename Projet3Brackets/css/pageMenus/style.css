@@ -205,6 +205,7 @@ p {
 
 /** BUTTON **/
 button {
+  font-family: "Roboto";
   border-style: none;
   border-radius: 30px;
   padding: 20px;
@@ -282,6 +283,13 @@ footer p {
   margin: auto 5%;
   display: flex;
   flex-direction: column;
+}
+.informationsActions a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  margin: 5px 0;
+  font-size: 19px;
 }
 
 @media (min-width: 680px) and (max-width: 1024px) {
@@ -380,6 +388,13 @@ footer p {
 
   .informationsActions {
     margin: 0 5%;
+  }
+  .informationsActions a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 5px 0;
+    font-size: 19px;
   }
 }
 @media (max-width: 680px) {
@@ -495,6 +510,7 @@ footer p {
 
   /** BUTTON **/
   button {
+    font-family: "Roboto";
     width: 55%;
     margin: 10% 20%;
     padding: 10px 20px;
